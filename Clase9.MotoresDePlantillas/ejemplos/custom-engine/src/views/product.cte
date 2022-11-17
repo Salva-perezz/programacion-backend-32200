@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+        <li><strong>Title:</strong> ^^title$$</li>
+        <li><strong>Price:</strong> ^^price$$</li>
+        <li><strong>Stock:</strong> ^^stock$$</li>
+        <li><strong>Description:</strong> ^^description$$</li>
+    </ul>
+  </body>
+</html>
