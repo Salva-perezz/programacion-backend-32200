@@ -1,0 +1,7 @@
+extends main.pug 
+
+block datos 
+    h1(style='color: blue;')=title
+    p(style='display: inline;')=min 
+    meter(max=max min=min value=level)
+    p(style='display: inline;')=max 
