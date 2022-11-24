@@ -7,7 +7,10 @@
     <title>Mi plantilla EJS</title>
   </head>
   <body>
+    <h1 style="color: <%= color %>"><%=title%></h1>
     <%- include('./partials/nav.ejs') %> <br />
-    <%- include('./partials/info.ejs') %>
+    <%- include('./partials/info.ejs', products) %>
+    <br />
+    <%- footer %>
   </body>
 </html>

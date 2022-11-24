@@ -71,7 +71,7 @@ app.put("/api/mensaje/:id", (req, res) => {
   const { id } = req.params;
 
   const messageIndex = mensajes.findIndex((mensaje) => {
-    mensaje.id === Number(id);
+    return mensaje.id === Number(id);
   });
 
   mensajes.splice(messageIndex, 1, { id, mensaje });
@@ -82,9 +82,9 @@ app.put("/api/mensaje/:id", (req, res) => {
 app.delete("/api/mensaje/:id", (req, res) => {
   const { id } = req.params;
 
-  const messageIndex = mensajes.findIndex((mensaje) => {
-    mensaje.id === Number(id);
-  });
+  const messageIndex = mensajes.findIndex(
+    (mensaje) => mensaje.id === Number(id)
+  );
 
   mensajes.splice(messageIndex, 1);
 

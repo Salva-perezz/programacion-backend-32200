@@ -1,6 +1,16 @@
+<% if(products.length) { %>
 <ul>
-  <li>Titulo: Lapiz</li>
-  <li>Precio: 125</li>
-  <li>Stock: 500</li>
-  <li>Marca: Arbolito</li>
+  <% products.forEach(product => {%>
+  <li>
+    <ul>
+      <li>Title: <%= product.title %></li>
+      <li>Price: <%= product.price %></li>
+      <li>Stock: <%= product.stock %></li>
+      <li>Stock: <%= product.stock %></li>
+    </ul>
+  </li>
+  <% }) %>
 </ul>
+<% } else { %>
+<h1>No hay datos :(</h1>
+<% } %>
