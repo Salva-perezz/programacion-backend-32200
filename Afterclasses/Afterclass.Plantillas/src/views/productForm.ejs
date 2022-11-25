@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+  </head>
+  <body>
+    <button id="productButton">Ver productos</button>
+    <h1>Carga un producto!</h1>
+    <form action="/product" method="post">
+      <input type="text" placeholder="Nombre" name="name" /><br />
+      <input type="number" placeholder="Precio" name="price" /><br />
+      <input type="text" placeholder="Imagen" name="thumbnail" /><br />
+      <input type="submit" value="Cargar producto" />
+    </form>
+
+    <script>
+      const productButton = document.getElementById("productButton");
+
+      productButton.addEventListener("click", (event) => {
+        window.location = "/product";
+      });
+    </script>
+  </body>
+</html>

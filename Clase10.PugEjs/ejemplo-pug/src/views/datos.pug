@@ -1,6 +1,7 @@
-extends main.pug
-
-block datos
-    h1=nombreCompleto
-    p(style=edadStyle)=edad 
-    p=altura
+if datos.length
+    each dato in datos
+        h1=dato.nombreCompleto
+        p(style=dato.edadStyle)=dato.edad
+        p=dato.altura
+else 
+    p No hay datos :(
