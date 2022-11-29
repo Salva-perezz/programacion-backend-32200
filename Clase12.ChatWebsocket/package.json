@@ -1,0 +1,17 @@
+{
+  "name": "clase12.chatwebsocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4"
+  }
+}
