@@ -1,9 +1,6 @@
-import express from "express";
-import { Server as IOServer } from "socket.io";
-import { dirname } from "path";
-import { fileURLToPath } from "url";
+const express = require("express");
+const { Server: IOServer } = require("socket.io");
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const expressServer = app.listen(8080, () => {
   console.log("Server listening port 8080");
