@@ -1,0 +1,1 @@
+setTimeout(console.log,1e3,"Hola soy mensaje 1"),setTimeout(console.log,2e3,"Hola soy mensaje 2"),setTimeout(console.log,3e3,"Hola soy mensaje 3");
