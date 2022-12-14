@@ -25,3 +25,22 @@ delete from dog where id = 4;
 drop table dog;
 
 drop database coderhouse;
+
+
+------------------- DESAFIO --------------------------------------------------------------------
+
+create databse mibase;
+
+use mibase;
+
+CREATE TABLE usuarios (id int primary key auto_increment not null, nombre varchar(50) not null, apellido varchar(50) not null, edad int, email varchar(50) not null);
+
+insert into usuarios (nombre, apellido, edad, email) values ("Juan", "Perez", 23, "jp@gmail.com");
+insert into usuarios (nombre, apellido, edad, email) values ("Pedro", "Mei", 21, "pm@gmail.com");
+insert into usuarios (nombre, apellido, edad, email) values ("Juana", "Suarez", 25, "js@gmail.com");
+
+select * from usuarios;
+
+delete from usuarios where id = 2;
+
+update usuarios set edad = 24 where id = 1;
