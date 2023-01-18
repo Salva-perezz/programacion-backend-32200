@@ -1,0 +1,17 @@
+{
+  "name": "ejemplo-mock-faker-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "express": "^4.18.2"
+  }
+}
