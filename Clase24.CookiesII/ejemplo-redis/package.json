@@ -1,0 +1,19 @@
+{
+  "name": "ejemplo-redis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-redis": "^6.1.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "redis": "^4.6.1"
+  }
+}
