@@ -1,27 +1,17 @@
-import connectRedis from "connect-redis";
+import MongoStore from "connect-mongo";
 import express from "express";
 import session from "express-session";
-import { createClient } from "redis";
 
 const app = express();
-const client = createClient({
-  legacyMode: true,
-});
-const RedisStore = connectRedis(session);
-
-await client.connect();
 
 app.use(
   session({
     secret: "coderhouse",
+    rolling: true, // Esto lo que hace es que reinicia el tiempo de expiracion de las sesiones con cada request
     resave: false,
     saveUninitialized: false,
-    rolling: true,
-    store: new RedisStore({
-      host: "redis-11266.c93.us-east-1-3.ec2.cloud.redislabs.com",
-      port: 11266,
-      client,
-      ttl: 60,
+    store: new MongoStore({
+      mongoUrl: "mongodb://localhost:27017",
     }),
   })
 );
