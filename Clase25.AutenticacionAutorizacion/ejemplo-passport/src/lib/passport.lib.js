@@ -41,7 +41,7 @@ const registerStrategy = new LocalStrategy(
         lastname: req.body.lastname,
         email: req.body.email,
       };
-      const createdUser = User.create(newUser);
+      const createdUser = await User.create(newUser);
 
       req.user = createdUser;
 
