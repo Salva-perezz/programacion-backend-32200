@@ -1,0 +1,16 @@
+{
+  "name": "ejemplo-variables-entorno",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "ENV=prod PORT=8080 HOST=127.0.0.1 node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
