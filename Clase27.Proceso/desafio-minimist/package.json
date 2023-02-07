@@ -1,0 +1,16 @@
+{
+  "name": "desafio-minimist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node . 1 2 3 -m dev -p 8080 -d"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.7"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ejemplo-minimist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node . -u salva -p salvax -d"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.7"
+  }
+}

@@ -30,12 +30,13 @@ passport.use("login", passportStrategies.loginStrategy);
 passport.use("register", passportStrategies.registerStrategy);
 
 passport.serializeUser((user, done) => {
-  console.log(user);
   done(null, user._id);
 });
 
-passport.deserializeUser((id, done) => {
-  User.findById(id);
+passport.deserializeUser(async (id, done) => {
+  const user = await User.findById(id);
+
+  return user;
 });
 
 app.use("/", router);

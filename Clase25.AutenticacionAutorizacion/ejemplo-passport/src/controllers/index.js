@@ -6,7 +6,7 @@ const __dirname = dirname(__filename);
 const getLogin = (req, res) => {
   if (req.isAuthenticated()) {
     const user = req.user;
-    console.log(user);
+    console.log("Get login");
     return res.render("login-ok", {
       usuario: user.username,
       nombre: user.firstname,
@@ -42,9 +42,10 @@ const getRegisterFailiure = (req, res) => {
 };
 
 const logOut = (req, res) => {
-  console.log("CHau");
+  console.log("Entre logou 1");
   req.logout(() => {
-    return res.redirect("/login");
+    console.log("Entre logou 2");
+    res.send("byebye");
   });
 };
 
