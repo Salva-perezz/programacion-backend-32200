@@ -1,0 +1,29 @@
+events {}
+
+http {
+    include mime.types;
+    default_type application/octet-stream;
+
+    upstream node_cluster_app {
+        server 127.0.0.1:8081;
+    }
+
+    upstream node_app {
+        server 127.0.0.1:8080;
+    }
+
+    server {
+        listen 80;
+        server_name nginx_server;
+        root /opt/homebrew/etc/nodeServer/public;
+
+        location /api/randoms/ {
+            proxy_pass http://node_cluster_app;
+        }
+
+        location / {
+            proxy_pass http://node_app;
+        }
+
+    }
+}
