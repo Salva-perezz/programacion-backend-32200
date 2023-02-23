@@ -1,0 +1,4 @@
+[2023-02-23T20:21:25.082] [INFO] archivo2 - Info level
+[2023-02-23T20:21:25.085] [WARN] archivo2 - Warn level
+[2023-02-23T20:21:25.085] [ERROR] archivo2 - Error level
+[2023-02-23T20:21:25.085] [FATAL] archivo2 - Fatal level
