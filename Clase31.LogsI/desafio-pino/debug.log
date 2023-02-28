@@ -1,0 +1,3 @@
+{"level":30,"time":1677197029050,"pid":36190,"hostname":"MacBook-Air-de-Salva.local","msg":"Servidor express escuchando en el puerto 3000"}
+{"level":30,"time":1677197037630,"pid":36190,"hostname":"MacBook-Air-de-Salva.local","msg":"Parámetros 1 y 2 correctos para la suma"}
+{"level":50,"time":1677197043966,"pid":36190,"hostname":"MacBook-Air-de-Salva.local","msg":"Parámetros incorrectos para la suma"}

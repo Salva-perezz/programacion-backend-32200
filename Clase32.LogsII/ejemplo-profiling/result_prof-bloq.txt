@@ -1,0 +1,118 @@
+Statistical profiling result from bloq-v8.log, (20807 ticks, 2 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     10    0.0%          /usr/lib/system/libsystem_pthread.dylib
+      8    0.0%          /usr/lib/system/libsystem_c.dylib
+      6    0.0%          /usr/lib/system/libsystem_malloc.dylib
+      6    0.0%          /usr/lib/system/libsystem_kernel.dylib
+      2    0.0%          /usr/lib/libc++.1.dylib
+      1    0.0%          /usr/lib/libobjc.A.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      2    0.0%    0.0%  Function: ^isstats /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/etag/index.js:104:18
+      1    0.0%    0.0%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    0.0%    0.0%  LazyCompile: *normalizeString node:path:66:25
+      1    0.0%    0.0%  Function: ^validateNumber node:internal/validators:175:24
+      1    0.0%    0.0%  Function: ^utcDate node:internal/http:19:17
+      1    0.0%    0.0%  Function: ^send /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/response.js:111:25
+      1    0.0%    0.0%  Function: ^removeAllListeners node:events:735:32
+      1    0.0%    0.0%  Function: ^process_params /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/index.js:338:47
+      1    0.0%    0.0%  Function: ^nextPart node:fs:2444:31
+      1    0.0%    0.0%  Function: ^next /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/index.js:177:16
+      1    0.0%    0.0%  Function: ^get node:internal/streams/writable:791:8
+      1    0.0%    0.0%  Function: ^fromStringFast node:buffer:418:24
+      1    0.0%    0.0%  Function: ^fromString node:buffer:437:20
+      1    0.0%    0.0%  Function: ^etag /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/etag/index.js:70:15
+      1    0.0%    0.0%  Function: ^entitytag /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/etag/index.js:39:20
+      1    0.0%    0.0%  Function: ^emitCloseNT node:_http_server:888:21
+      1    0.0%    0.0%  Function: ^emit node:events:460:44
+      1    0.0%    0.0%  Function: ^contentType /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/response.js:619:32
+      1    0.0%    0.0%  Function: ^clearTimeout node:timers:185:22
+      1    0.0%    0.0%  Function: ^checkIsHttpToken node:_http_common:220:26
+      1    0.0%    0.0%  Function: ^Readable.read node:internal/streams/readable:394:35
+
+ [C++]:
+   ticks  total  nonlib   name
+  20649   99.2%   99.4%  t non-virtual thunk to node::SimpleWriteWrap<node::ReqWrap<uv_write_s> >::IsNotIndicativeOfMemoryLeakAtExit() const
+     19    0.1%    0.1%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     15    0.1%    0.1%  T _semaphore_destroy
+     14    0.1%    0.1%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     14    0.1%    0.1%  t __posix_spawn_file_actions_grow
+      9    0.0%    0.0%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.0%    0.0%  T _mach_get_times
+      2    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      2    0.0%    0.0%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T _mach_vm_map
+      2    0.0%    0.0%  T _mach_port_allocate
+      2    0.0%    0.0%  T __simple_getenv
+      1    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      1    0.0%    0.0%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::Environment::StartProfilerIdleNotifier()::$_6::__invoke(uv_check_s*)
+      1    0.0%    0.0%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t __os_once_gate_broadcast
+      1    0.0%    0.0%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T _task_set_special_port
+      1    0.0%    0.0%  T _task_dyld_process_info_notify_get
+      1    0.0%    0.0%  T _necp_client_action
+      1    0.0%    0.0%  T _mig_dealloc_reply_port
+
+ [Summary]:
+   ticks  total  nonlib   name
+     22    0.1%    0.1%  JavaScript
+  20750   99.7%   99.9%  C++
+     31    0.1%    0.1%  GC
+     33    0.2%          Shared libraries
+      2    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+  20623   99.7%   99.1%  t non-virtual thunk to node::SimpleWriteWrap<node::ReqWrap<uv_write_s> >::IsNotIndicativeOfMemoryLeakAtExit() const
+     19    0.1%    0.1%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     14    0.1%    0.1%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.0%    0.0%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.0%    0.0%  T _semaphore_destroy
+      2    0.0%    0.0%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T __simple_getenv
+      1    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      1    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      1    0.0%    0.0%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t __os_once_gate_broadcast
+      1    0.0%    0.0%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T _mig_dealloc_reply_port
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  20649   99.2%  t non-virtual thunk to node::SimpleWriteWrap<node::ReqWrap<uv_write_s> >::IsNotIndicativeOfMemoryLeakAtExit() const
+  20048   97.1%    Function: ^pbkdf2Sync node:internal/crypto/pbkdf2:69:20
+  19979   99.7%      Function: ^<anonymous> /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/server.js:32:23
+  19979  100.0%        Function: ^handle /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/layer.js:86:49
+  19773   99.0%          Function: ^next /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/route.js:116:16
+  19773  100.0%            Function: ^dispatch /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/route.js:98:45
+    206    1.0%          LazyCompile: ~next /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/route.js:116:16
+    206  100.0%            Function: ^dispatch /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/route.js:98:45
+    323    1.6%    LazyCompile: ~pbkdf2Sync node:internal/crypto/pbkdf2:69:20
+    276   85.4%      LazyCompile: ~<anonymous> /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/server.js:32:23
+    206   74.6%        Function: ^handle /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/layer.js:86:49
+    206  100.0%          LazyCompile: ~next /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/route.js:116:16
+    206  100.0%            LazyCompile: ~dispatch /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/route.js:98:45
+     70   25.4%        LazyCompile: ~handle /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/layer.js:86:49
+     70  100.0%          LazyCompile: ~next /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/route.js:116:16
+     70  100.0%            LazyCompile: ~dispatch /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/route.js:98:45
+     47   14.6%      LazyCompile: ~<anonymous> /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/server.js:14:21
+     47  100.0%        LazyCompile: ~handle /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/layer.js:86:49
+     47  100.0%          LazyCompile: ~next /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/route.js:116:16
+     47  100.0%            LazyCompile: ~dispatch /Users/salvadorperez/Desktop/Coderhouse.nosync/programacion-backend-32200/Clase32.LogsII/ejemplo-profiling/node_modules/express/lib/router/route.js:98:45
+

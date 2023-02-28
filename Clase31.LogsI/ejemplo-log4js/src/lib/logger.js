@@ -15,6 +15,6 @@ log4js.configure({
   },
 });
 
-const logger = log4js.getLogger("todos");
+const logger = log4js.getLogger("default");
 
 export default logger;

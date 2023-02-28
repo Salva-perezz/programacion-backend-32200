@@ -1,0 +1,3 @@
+{"level":"info","message":"Servidor express escuchando en el puerto 3000"}
+{"level":"error","message":"Parámetros incorrectos para la suma"}
+{"level":"info","message":"Parámetros 1 y 4 correctos para la suma"}
