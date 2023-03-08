@@ -1,12 +1,23 @@
 {
-  "name": "clase34.railway",
+  "name": "salva-express",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salva-perezz/salva-server.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salva-perezz/salva-server/issues"
+  },
+  "homepage": "https://github.com/Salva-perezz/salva-server#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
