@@ -1,0 +1,16 @@
+{
+  "name": "ejemplo-twilio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "twilio": "^4.8.0"
+  }
+}
