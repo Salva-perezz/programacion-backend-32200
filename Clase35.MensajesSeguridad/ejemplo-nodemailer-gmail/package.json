@@ -1,0 +1,17 @@
+{
+  "name": "ejemplo-nodemailer-gmail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "nodemailer": "^6.9.1"
+  }
+}
