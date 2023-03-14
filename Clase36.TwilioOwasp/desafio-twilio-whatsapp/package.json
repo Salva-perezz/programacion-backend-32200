@@ -1,0 +1,16 @@
+{
+  "name": "desafio-twilio-owasp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node . +5493425672867 'Hola desde Nodejs'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "twilio": "^4.8.0"
+  }
+}
