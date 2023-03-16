@@ -1,0 +1,13 @@
+{
+  "name": "operaciones-salva",
+  "version": "2.0.0",
+  "description": "Este paquete sirve para realizar operaciones matematicas",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
