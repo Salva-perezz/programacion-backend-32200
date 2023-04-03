@@ -6,7 +6,7 @@ import router from "./routes/index.js";
 
 const app = express();
 const db = DBClientFactory.getClient(config.database);
-console.log(config.database);
+
 app.use(json());
 app.use(urlencoded({ extended: true }));
 app.use(
@@ -17,7 +17,7 @@ app.use(
   })
 );
 
-app.use(router);
+app.use("/api", router);
 
 await db.connect();
 app.listen(config.port, () => {

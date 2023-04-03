@@ -4,7 +4,7 @@ import config from "../config/config.js";
 const DAO = NewDaoFactory.getClient(config.database);
 
 export default class NewController {
-  async getNews() {
+  async getNews(req, res) {
     try {
       const response = await DAO.getAll();
 
@@ -18,7 +18,7 @@ export default class NewController {
   async create(req, res) {
     try {
       await DAO.create(req.body);
-
+      console.log(req.body, "Holaa");
       res.sendStatus(201);
     } catch (err) {
       console.log(err);

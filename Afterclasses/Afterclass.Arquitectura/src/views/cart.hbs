@@ -1,0 +1,35 @@
+<form action="/logout" method="get">
+<h1 style="display: inline-block;">Bienvenido {{user.username}}</h1> <button style="display: inline-block;" type="submit">Logout</button>
+<h3>Nombre: {{user.firstname}}</h3>
+<h3>Apellido: {{user.lastname}}</h3>
+<h3>Email: {{user.email}}</h3>
+<h3>Tel: {{user.phone}}</h3>
+<h3>Dirección: {{user.address}}</h3>
+<h3>Edad: {{user.age}}</h3>
+<img style="width: 100px" src="/{{user.photo}}" alt="Imagen subida">
+</form>
+
+<div style="border: 1px solid black; width:300px">
+    <h2 style="text-decoration: underline">Mi carrito</h2>
+
+    <ul>
+        {{#if cart.products.length}}
+        {{#each cart.products}}
+        <h2>{{this.title}}</h2>
+        <img src="{{this.thumbnail}}" alt="" width="100">
+        <p>{{this.price}}</p>
+        {{/each}}
+        {{/if}}
+    </ul>
+    {{#with cart}}
+    <form action="/cart/finish/{{this._id}}" method="POST">
+        <button type="submit" name="buy">Comprar</button>
+    </form>
+    {{/with}}
+</div>
+
+<div id="cartContainer"></div>
+
+<div id="productsContainer"></div>
+
+
