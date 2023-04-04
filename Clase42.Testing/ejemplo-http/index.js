@@ -6,13 +6,13 @@ const data = JSON.stringify({
 });
 
 const optionsGet = {
-  hostname: "127.0.0.1",
-  port: 3000,
-  path: "/api/user",
+  hostname: "jsonplaceholder.typicode.com",
+  port: 80,
+  path: "/posts",
   method: "GET",
-  headers: {
-    userId: "642ca1df2e7527f69c86bf4d",
-  },
+  // headers: {
+  //   userId: "642ca1df2e7527f69c86bf4d",
+  // },
 };
 
 const optionsPost = {
@@ -29,8 +29,9 @@ const optionsPost = {
 const request = http.request(optionsGet, (res) => {
   console.log(`StatusCode: ${res.statusCode}`);
 
-  res.on("data", (err) => {
-    console.log(JSON.parse(data.toString("utf8")));
+  res.on("data", (data) => {
+    console.log(data.toString("utf8"));
+    //console.log(JSON.parse(data.toString("utf8")));
   });
 });
 
