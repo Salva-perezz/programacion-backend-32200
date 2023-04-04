@@ -1,0 +1,19 @@
+{
+  "name": "ejemplo-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha ./*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "faker": "5.5.3",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
+  }
+}
