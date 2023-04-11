@@ -8,4 +8,5 @@ paths:
         required: true
         content:
           application/json:
-            schemas: "#/components/schemas/NumberRequestBody"
+            schema:
+              $ref: "#/components/schemas/NumberRequestBody"
