@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+
+<h2>Palabras</h2>
+<ol>
+    @each(word in orderedWords)
+        <li>{{word}}</li>
+    @endeach
+</ol>
+<hr />
+
+<h2>Palabras invertidas</h2>
+<ol>
+    @each(word in unorderedWords)
+        <li>{{word}}</li>
+    @endeach
+</ol>
